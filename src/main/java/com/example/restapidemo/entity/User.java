@@ -12,8 +12,9 @@ public class User {
     private Long id;
     private String name;
     private String email;
-    private String password; // Thêm trường password
-    private String role; // Thêm trường role (ví dụ: USER, ADMIN)
+    private String password;
+    private String role;
+    private String provider; // Thêm trường provider (ví dụ: github, facebook, google)
 
     // Getters and Setters
     public Long getId() {
@@ -54,5 +55,13 @@ public class User {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    public String getProvider() {
+        return provider;
+    }
+
+    public void setProvider(String provider) {
+        this.provider = provider;
     }
 }
